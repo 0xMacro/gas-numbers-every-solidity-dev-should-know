@@ -1,0 +1,19 @@
+{
+  "name": "gas-numbers-every-solidity-dev-should-know",
+  "version": "1.0.0",
+  "description": "This repo uses Browserify to keep the simplicity of html & vanilla js webpages, while preserving the niceties of node and creating an optimized production bundle. Check out the Browserify docs if you need help getting started: https://github.com/browserify/browserify#usage",
+  "main": "main.js",
+  "scripts": {
+    "build": "browserify main.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xMacro/gas-numbers-every-solidity-dev-should-know.git"
+  },
+  "author": "dd0sxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xMacro/gas-numbers-every-solidity-dev-should-know/issues"
+  },
+  "homepage": "https://github.com/0xMacro/gas-numbers-every-solidity-dev-should-know#readme"
+}

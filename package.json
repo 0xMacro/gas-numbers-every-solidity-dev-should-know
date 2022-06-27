@@ -4,8 +4,8 @@
   "description": "This repo uses Browserify to keep the simplicity of html & vanilla js webpages, while preserving the niceties of node and creating an optimized production bundle. Check out the Browserify docs if you need help getting started: https://github.com/browserify/browserify#usage",
   "main": "main.js",
   "scripts": {
-    "build": "browserify main.js -o bundle.js",
-    "dev": "watchify main.js -o bundle.js"
+    "build": "browserify main.js -o ./dist/bundle.js",
+    "dev": "watchify main.js -o bundle.js & npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/0xMacro/gas-numbers-every-solidity-dev-should-know/issues"
   },
-  "homepage": "https://github.com/0xMacro/gas-numbers-every-solidity-dev-should-know#readme"
+  "homepage": "https://github.com/0xMacro/gas-numbers-every-solidity-dev-should-know#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  }
 }

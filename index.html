@@ -7,41 +7,40 @@
     <link rel="stylesheet" href="./dist/output.css">
   </head>
   <body class="max-w-5xl m-auto">
-	<script src="./dist/bundle.js"></script>
     <h1 class="my-5">Gas Numbers Every Solidity Dev Should Know</h1>
     <h2 class="my-5">Current Gas Price:</h2>
     <div class="flex w-5/6 justify-between my-5">
-        <div>High:</div>
-        <div>Med:</div>
-        <div>Low:</div>
+      <div>High:</div>
+      <div>Med:</div>
+      <div>Low:</div>
     </div>
     <div id='opcodes' class="flex flex-col my-5">
       <h3>OPCODES</h3>
-        <div id="ADD">ADD: 3</div>
-        <div id="BALANCE (warm)">BALANCE (warm): 100</div>
-        <div id="BALANCE (cold)">BALANCE (cold): 2600</div>
-        <div id="CALLDATACOPY">CALLDATACOPY: 7</div>
-        <div id="MSTORE">MSTORE: 3</div>
-        <div id="MLOAD">MLOAD: 3</div>
-        <div id="TIMESTAMP">TIMESTAMP: 2</div>
-        <div id="ADDRESS">ADDRESS: 2</div>
-        <div id="LOG0">LOG0: 632</div>
-        <div id="LOG4">LOG4: 2132</div>
-        <div id="SSTORE (clean: zero to nonzero)">SSTORE (clean: zero to nonzero): 22100</div>
-        <div id="SSTORE (clean: nonzero to nonzero)">SSTORE (clean: nonzero to nonzero): 5000</div>
-        <div id="SSTORE (clean: nonzero to zero)">SSTORE (clean: nonzero to zero): 5000>Refund: 4800</div>
-        <div id="SSTORE (dirty: zero to nonzero)">SSTORE (dirty: zero to nonzero): 20000</div>
-        <div id="SSTORE (dirty: nonzero to nonzero)">SSTORE (dirty: nonzero to nonzero): 2900</div>
-        <div id="SSTORE (dirty: nonzero to zero)">SSTORE (dirty: nonzero to zero): 2900>Refund: 4800</div>
-        <div id="SSLOAD (cold)">SSLOAD (cold): 2100</div>
-        <div id="SSLOAD (warm)">SSLOAD (warm): 100</div>
-        <div id="CALL (no-value, warm)">CALL (no-value, warm): 100</div>
-        <div id="CALL (no-value, cold)">CALL (no-value, cold): 2600</div>
-        <div id="CALL (no-value, new-address)">CALL (no-value, new-address): 25000</div>
-        <div id="CALL (value, cold)">CALL (value, cold): 11600</div>
-        <div id="CALL (value, warm)">CALL (value, warm): 9100</div>
-        <div id="CALL (value, new-address)">CALL (value, new-address): 34000</div>
-        <div id="CREATE">CREATE: 32000</div>
+      <div id="ADD">ADD: 3</div>
+      <div id="BALANCE (warm)">BALANCE (warm): 100</div>
+      <div id="BALANCE (cold)">BALANCE (cold): 2600</div>
+      <div id="CALLDATACOPY">CALLDATACOPY: 7</div>
+      <div id="MSTORE">MSTORE: 3</div>
+      <div id="MLOAD">MLOAD: 3</div>
+      <div id="TIMESTAMP">TIMESTAMP: 2</div>
+      <div id="ADDRESS">ADDRESS: 2</div>
+      <div id="LOG0">LOG0: 632</div>
+      <div id="LOG4">LOG4: 2132</div>
+      <div id="SSTORE (clean: zero to nonzero)">SSTORE (clean: zero to nonzero): 22100</div>
+      <div id="SSTORE (clean: nonzero to nonzero)">SSTORE (clean: nonzero to nonzero): 5000</div>
+      <div id="SSTORE (clean: nonzero to zero)">SSTORE (clean: nonzero to zero): 5000>Refund: 4800</div>
+      <div id="SSTORE (dirty: zero to nonzero)">SSTORE (dirty: zero to nonzero): 20000</div>
+      <div id="SSTORE (dirty: nonzero to nonzero)">SSTORE (dirty: nonzero to nonzero): 2900</div>
+      <div id="SSTORE (dirty: nonzero to zero)">SSTORE (dirty: nonzero to zero): 2900>Refund: 4800</div>
+      <div id="SSLOAD (cold)">SSLOAD (cold): 2100</div>
+      <div id="SSLOAD (warm)">SSLOAD (warm): 100</div>
+      <div id="CALL (no-value, warm)">CALL (no-value, warm): 100</div>
+      <div id="CALL (no-value, cold)">CALL (no-value, cold): 2600</div>
+      <div id="CALL (no-value, new-address)">CALL (no-value, new-address): 25000</div>
+      <div id="CALL (value, cold)">CALL (value, cold): 11600</div>
+      <div id="CALL (value, warm)">CALL (value, warm): 9100</div>
+      <div id="CALL (value, new-address)">CALL (value, new-address): 34000</div>
+      <div id="CREATE">CREATE: 32000</div>
     </div>
     <div id='contract-calls' class="flex flex-col my-5">
       <h4>CONTRACT CALLS</h4>
@@ -80,5 +79,6 @@
       <div id="Across Protocol: Bridge">Across Protocol::Bridge: 120666</div>
       <div id="Synapse: Bridge">Synapse::Bridge: 107610</div>
     </div>
+    <script src="./dist/bundle.js"></script>
   </body>
-</html>
+  </html>

@@ -15,7 +15,33 @@
         <div>Med:</div>
         <div>Low:</div>
     </div>
-    <div id='opcodes' class="flex flex-col"></div>
+    <div id='opcodes' class="flex flex-col">
+        <div id="ADD">ADD: 3</div>
+        <div id="BALANCE (warm)">BALANCE (warm): 100</div>
+        <div id="BALANCE (cold)">BALANCE (cold): 2600</div>
+        <div id="CALLDATACOPY">CALLDATACOPY: 7</div>
+        <div id="MSTORE">MSTORE: 3</div>
+        <div id="MLOAD">MLOAD: 3</div>
+        <div id="TIMESTAMP">TIMESTAMP: 2</div>
+        <div id="ADDRESS">ADDRESS: 2</div>
+        <div id="LOG0">LOG0: 632</div>
+        <div id="LOG4">LOG4: 2132</div>
+        <div id="SSTORE (clean: zero to nonzero)">SSTORE (clean: zero to nonzero): 22100</div>
+        <div id="SSTORE (clean: nonzero to nonzero)">SSTORE (clean: nonzero to nonzero): 5000</div>
+        <div id="SSTORE (clean: nonzero to zero)">SSTORE (clean: nonzero to zero): 5000>Refund: 4800</div>
+        <div id="SSTORE (dirty: zero to nonzero)">SSTORE (dirty: zero to nonzero): 20000</div>
+        <div id="SSTORE (dirty: nonzero to nonzero)">SSTORE (dirty: nonzero to nonzero): 2900</div>
+        <div id="SSTORE (dirty: nonzero to zero)">SSTORE (dirty: nonzero to zero): 2900>Refund: 4800</div>
+        <div id="SSLOAD (cold)">SSLOAD (cold): 2100</div>
+        <div id="SSLOAD (warm)">SSLOAD (warm): 100</div>
+        <div id="CALL (no-value, warm)">CALL (no-value, warm): 100</div>
+        <div id="CALL (no-value, cold)">CALL (no-value, cold): 2600</div>
+        <div id="CALL (no-value, new-address)">CALL (no-value, new-address): 25000</div>
+        <div id="CALL (value, cold)">CALL (value, cold): 11600</div>
+        <div id="CALL (value, warm)">CALL (value, warm): 9100</div>
+        <div id="CALL (value, new-address)">CALL (value, new-address): 34000</div>
+        <div id="CREATE">CREATE: 32000</div>
+    </div>
     <div id='contract-calls' class="flex flex-col"></div>
   </body>
 </html>

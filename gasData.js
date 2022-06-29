@@ -69,6 +69,8 @@ let data = {
     ]
 }
 
+module.exports = data
+
 // decided not to include
 // {name: "USDT: Transfer", gas: 54201 }, // USDT: Transfer	$1.37	$1.37	$1.37
 // {name: "Bancor: Swap", gas: 182779 }, // Bancor: Swap	$4.62	$4.62	$4.62

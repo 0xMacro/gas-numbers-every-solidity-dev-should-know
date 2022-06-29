@@ -562,11 +562,6 @@ video {
   margin: auto;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -578,14 +573,6 @@ video {
 
 .w-5\/6 {
   width: 83.333333%;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-7xl {
-  max-width: 80rem;
 }
 
 .max-w-5xl {

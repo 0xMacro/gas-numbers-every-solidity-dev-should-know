@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "build": "browserify main.js -o ./dist/bundle.js",
-    "dev": "watchify main.js -o bundle.js & npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
+    "dev": "watchify main.js -o ./dist/bundle.js & npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",

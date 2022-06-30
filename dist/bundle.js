@@ -127,6 +127,6 @@ gasData.opcodes.forEach(item => {
     calculateGasToSquares(item.gas, item.name, '#0091e6')
 })
 gasData.contractCalls.forEach(item => {
-    calculateGasToSquares(item.gas, item.name, '#000')
+    calculateGasToSquares(item.gas, item.name, '#fa6132')
 })
 },{"./gasData":1}]},{},[2]);

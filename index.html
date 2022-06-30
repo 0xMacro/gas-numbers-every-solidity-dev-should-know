@@ -8,6 +8,7 @@
   </head>
   <body class="max-w-5xl m-auto">
     <h1 class="my-5 text-2xl font-bold">Gas Numbers Every Solidity Dev Should Know</h1>
+    <p>All numbers indicate the number of gas units each operation requires to execute. Each box is = 2,000 units of gas</p>
     <!-- <h2 class="my-5">Current Gas Price:</h2>
     <div class="flex justify-between my-5">
       <div>High:</div>
@@ -17,184 +18,184 @@
     <h3 class="text-xl underline underline-offset-2">OPCODES</h3>
     <div id='opcodes' class="flex flex-wrap justify-between my-5">
       <div id="ADD" class="flex opcode">
-        <div>ADD: 3</div>
+        <div class="operation-name">ADD: 3</div>
       </div>
       <div id="BALANCE (warm)" class="flex opcode">
-        <div>BALANCE (warm): 100</div>
+        <div class="operation-name">BALANCE (warm): 100</div>
       </div>
       <div id="BALANCE (cold)" class="flex opcode">
-        <div>BALANCE (cold): 2600</div>
+        <div class="operation-name">BALANCE (cold): 2,600</div>
       </div>
       <div id="CALLDATACOPY" class="flex opcode">
-        <div>CALLDATACOPY: 7</div>
+        <div class="operation-name">CALLDATACOPY: 7</div>
       </div>
       <div id="MSTORE" class="flex opcode">
-        <div>MSTORE: 3</div>
+        <div class="operation-name">MSTORE: 3</div>
       </div>
       <div id="MLOAD" class="flex opcode">
-        <div>MLOAD: 3</div>
+        <div class="operation-name">MLOAD: 3</div>
       </div>
       <div id="TIMESTAMP" class="flex opcode">
-        <div>TIMESTAMP: 2</div>
+        <div class="operation-name">TIMESTAMP: 2</div>
       </div>
       <div id="ADDRESS" class="flex opcode">
-        <div>ADDRESS: 2</div>
+        <div class="operation-name">ADDRESS: 2</div>
       </div>
       <div id="LOG0" class="flex opcode">
-        <div>LOG0: 632</div>
+        <div class="operation-name">LOG0: 632</div>
       </div>
       <div id="LOG4" class="flex opcode">
-        <div>LOG4: 2132</div>
+        <div class="operation-name">LOG4: 2,132</div>
       </div>
       <div id="SSTORE (clean: zero to nonzero)" class="flex opcode">
-        <div>SSTORE (clean: zero to nonzero): 22100</div>
+        <div class="operation-name">SSTORE (clean: zero to nonzero): 22,100</div>
       </div>
       <div id="SSTORE (clean: nonzero to nonzero)" class="flex opcode">
-        <div>SSTORE (clean: nonzero to nonzero): 5000</div>
+        <div class="operation-name">SSTORE (clean: nonzero to nonzero): 5,000</div>
       </div>
       <div id="SSTORE (clean: nonzero to zero)" class="flex opcode">
-        <div>SSTORE (clean: nonzero to zero): 5000>Refund: 4800</div>
+        <div class="operation-name">SSTORE (clean: nonzero to zero): 5,000 (refund: 4,800)</div>
       </div>
       <div id="SSTORE (dirty: zero to nonzero)" class="flex opcode">
-        <div>SSTORE (dirty: zero to nonzero): 20000</div>
+        <div class="operation-name">SSTORE (dirty: zero to nonzero): 20m000</div>
       </div>
       <div id="SSTORE (dirty: nonzero to nonzero)" class="flex opcode">
-        <div>SSTORE (dirty: nonzero to nonzero): 2900</div>
+        <div class="operation-name">SSTORE (dirty: nonzero to nonzero): 2,900</div>
       </div>
       <div id="SSTORE (dirty: nonzero to zero)" class="flex opcode">
-        <div>SSTORE (dirty: nonzero to zero): 2900>Refund: 4800</div>
+        <div class="operation-name">SSTORE (dirty: nonzero to zero): 2,900 (refund: 4,800)</div>
       </div>
       <div id="SSLOAD (cold)" class="flex opcode">
-        <div>SSLOAD (cold): 2100</div>
+        <div class="operation-name">SSLOAD (cold): 2,100</div>
       </div>
       <div id="SSLOAD (warm)" class="flex opcode">
-        <div>SSLOAD (warm): 100</div>
+        <div class="operation-name">SSLOAD (warm): 100</div>
       </div>
       <div id="CALL (no-value, warm)" class="flex opcode">
-        <div>CALL (no-value, warm): 100</div>
+        <div class="operation-name">CALL (no-value, warm): 100</div>
       </div>
       <div id="CALL (no-value, cold)" class="flex opcode">
-        <div>CALL (no-value, cold): 2600</div>
+        <div class="operation-name">CALL (no-value, cold): 2,600</div>
       </div>
       <div id="CALL (no-value, new-address)" class="flex opcode">
-        <div>CALL (no-value, new-address): 25000</div>
+        <div class="operation-name">CALL (no-value, new-address): 25,000</div>
       </div>
       <div id="CALL (value, cold)" class="flex opcode">
-        <div>CALL (value, cold): 11600</div>
+        <div class="operation-name">CALL (value, cold): 11,600</div>
       </div>
       <div id="CALL (value, warm)" class="flex opcode">
-        <div>CALL (value, warm): 9100</div>
+        <div class="operation-name">CALL (value, warm): 9,100</div>
       </div>
       <div id="CALL (value, new-address)" class="flex opcode">
-        <div>CALL (value, new-address): 34000</div>
+        <div class="operation-name">CALL (value, new-address): 34,000</div>
       </div>
       <div id="CREATE" class="flex opcode">
-        <div>CREATE: 32000</div>
+        <div class="operation-name">CREATE: 32,000</div>
       </div>
     </div>
     <h4 class="text-xl underline underline-offset-4">CONTRACT CALLS</h4>
     <div id='contract-calls'  class="flex flex-wrap justify-between my-5">
       <div class='flex contract-call' id="ERC20: Transfer">
-        <div>ERC20::Transfer: 64883</div>
+        <div class="operation-name">ERC20::Transfer: 64,883</div>
       </div>
       <div class='flex contract-call' id="ERC721: Transfer">
-        <div>ERC721::Transfer: 84663</div>
+        <div class="operation-name">ERC721::Transfer: 84,663</div>
       </div>
       <div class='flex contract-call' id="Uniswap V3: Swap">
-        <div>Uniswap V3::Swap: 184361</div>
+        <div class="operation-name">Uniswap V3::Swap: 184,361</div>
       </div>
       <div class='flex contract-call' id="Uniswap V2: Swap">
-        <div>Uniswap V2::Swap: 152711</div>
+        <div class="operation-name">Uniswap V2::Swap: 152,711</div>
       </div>
       <div class='flex contract-call' id="SushiSwap: Swap">
-        <div>SushiSwap::Swap: 140843</div>
+        <div class="operation-name">SushiSwap::Swap: 140,843</div>
       </div>
       <div class='flex contract-call' id="Curve: Swap">
-        <div>Curve::Swap: 749314</div>
+        <div class="operation-name">Curve::Swap: 749,314</div>
       </div>
       <div class='flex contract-call' id="Balancer: Swap">
-        <div>Balancer::Swap: 196230</div>
+        <div class="operation-name">Balancer::Swap: 196,230</div>
       </div>
       <div class='flex contract-call' id="1inch: Swap">
-        <div>1inch::Swap: 141634</div>
+        <div class="operation-name">1inch::Swap: 141,634</div>
       </div>
       <div class='flex contract-call' id="CoW Protocol: Swap">
-        <div>CoW Protocol::Swap: 343007</div>
+        <div class="operation-name">CoW Protocol::Swap: 343,007</div>
       </div>
       <div class='flex contract-call' id="OpenSea: Sale">
-        <div>OpenSea::Sale: 202164</div>
+        <div class="operation-name">OpenSea::Sale: 202,164</div>
       </div>
       <div class='flex contract-call' id="SuperRare: Sale">
-        <div>SuperRare::Sale: 130556</div>
+        <div class="operation-name">SuperRare::Sale: 130,556</div>
       </div>
       <div class='flex contract-call' id="Rarible: Sale">
-        <div>Rarible::Sale: 245288</div>
+        <div>Rarible::Sale: 245,288</div>
       </div>
       <div class='flex contract-call' id="LooksRare: Sale">
-        <div>LooksRare::Sale: 326391</div>
+        <div class="operation-name">LooksRare::Sale: 326,391</div>
       </div>
       <div class='flex contract-call' id="ENS: Register Domain">
-        <div>ENS::Register Domain: 266651</div>
+        <div class="operation-name">ENS::Register Domain: 266651</div>
       </div>
       <div class='flex contract-call' id="Gnosis Safe: Create Multisig">
-        <div>Gnosis Safe::Create Multisig: 288015</div>
+        <div class="operation-name">Gnosis Safe::Create Multisig: 288,015</div>
       </div>
       <div class='flex contract-call' id="Arbitrum: Deposit">
-        <div>Arbitrum::Deposit: 90994</div>
+        <div class="operation-name">Arbitrum::Deposit: 90,994</div>
       </div>
       <div class='flex contract-call' id="Optimism: Deposit">
-        <div>Optimism::Deposit: 150733</div>
+        <div class="operation-name">Optimism::Deposit: 150,733</div>
       </div>
       <div class='flex contract-call' id="Polygon: Deposit">
-        <div>Polygon::Deposit: 149151</div>
+        <div class="operation-name">Polygon::Deposit: 149,151</div>
       </div>
       <div class='flex contract-call' id="Beacon Chain: Deposit">
-        <div>Beacon Chain::Deposit: 53014</div>
+        <div class="operation-name">Beacon Chain::Deposit: 53,014</div>
       </div>
       <div class='flex contract-call' id="Tornado.Cash: Deposit">
-        <div>Tornado.Cash::Deposit: 1012400</div>
+        <div class="operation-name">Tornado.Cash::Deposit: 1,012,400</div>
       </div>
       <div class='flex contract-call' id="Tornado.Cash: Withdraw">
-        <div>Tornado.Cash::Withdraw: 360414</div>
+        <div class="operation-name">Tornado.Cash::Withdraw: 360,414</div>
       </div>
       <div class='flex contract-call' id="dYdX: Borrow">
-        <div>dYdX::Borrow: 174075</div>
+        <div class="operation-name">dYdX::Borrow: 174,075</div>
       </div>
       <div class='flex contract-call' id="MakerDAO: Borrow">
-        <div>MakerDAO::Borrow: 223023</div>
+        <div class="operation-name">MakerDAO::Borrow: 223,023</div>
       </div>
       <div class='flex contract-call' id="Compound: Collect">
-        <div>Compound::Collect: 1237520</div>
+        <div class="operation-name">Compound::Collect: 1,237,520</div>
       </div>
       <div class='flex contract-call' id="Compound: Borrow">
-        <div>Compound::Borrow: 339842</div>
+        <div class="operation-name">Compound::Borrow: 339,842</div>
       </div>
       <div class='flex contract-call' id="Compound: Repay">
-        <div>Compound::Repay: 112358</div>
+        <div class="operation-name">Compound::Repay: 112,358</div>
       </div>
       <div class='flex contract-call' id="Aave: Borrow">
-        <div>Aave::Borrow: 318478</div>
+        <div class="operation-name">Aave::Borrow: 318,478</div>
       </div>
       <div class='flex contract-call' id="Aave: Repay">
-        <div>Aave::Repay: 199395</div>
+        <div class="operation-name">Aave::Repay: 199,395</div>
       </div>
       <div class='flex contract-call' id="Lido: Stake">
-        <div>Lido::Stake: 82686</div>
+        <div class="operation-name">Lido::Stake: 82,686</div>
       </div>
       <div class='flex contract-call' id="Yearn Finance: Deposit">
-        <div>Yearn Finance::Deposit: 216011</div>
+        <div class="operation-name">Yearn Finance::Deposit: 216,011</div>
       </div>
       <div class='flex contract-call' id="Hop Protocol: Bridge">
-        <div>Hop Protocol::Bridge: 121457</div>
+        <div class="operation-name">Hop Protocol::Bridge: 121,457</div>
       </div>
       <div class='flex contract-call' id="Multichain: Bridge">
-        <div>Multichain::Bridge: 57761</div>
+        <div class="operation-name">Multichain::Bridge: 57,761</div>
       </div>
       <div class='flex contract-call' id="Across Protocol: Bridge">
-        <div>Across Protocol::Bridge: 120666</div>
+        <div class="operation-name">Across Protocol::Bridge: 120,666</div>
       </div>
       <div class='flex contract-call' id="Synapse: Bridge">
-        <div>Synapse::Bridge: 107610</div>
+        <div class="operation-name">Synapse::Bridge: 107,610</div>
       </div>
     </div>
     <script src="./dist/bundle.js"></script>

@@ -575,10 +575,6 @@ video {
   display: flex;
 }
 
-.w-5\/6 {
-  width: 83.333333%;
-}
-
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -626,4 +622,9 @@ video {
 .contract-call {
   margin: 10px 5px;
   min-width: 200px;
-} 
+}
+
+.operation-name {
+  display: flex;
+  align-items: center;
+}

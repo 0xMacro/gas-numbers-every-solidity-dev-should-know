@@ -10,3 +10,7 @@
     margin: 10px 5px;
     min-width: 200px;
 } 
+.operation-name {
+    display: flex;
+    align-items: center;
+}

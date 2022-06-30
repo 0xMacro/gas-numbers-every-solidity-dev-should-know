@@ -26,3 +26,17 @@ a {
     color: blue;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1000px) {
+    body {
+        padding: 2%;
+    }
+    #opcodes {
+        flex-direction: row !important;
+        max-height: 1000000000px !important; /* nonsensically large number to prevent overlapping */
+    }
+    #contract-calls{
+        flex-direction: row !important;
+        max-height: 1000000000px !important; /* nonsensically large number to prevent overlapping */
+    }
+}

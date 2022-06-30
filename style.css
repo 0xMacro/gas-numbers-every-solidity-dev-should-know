@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .opcode {
-    margin: 10px 0px
+    margin: 10px 5px;
+    min-width: 200px;
 } 

@@ -91,27 +91,37 @@ function addSquaresToDOM (elementID, squares, remainder) {
     let squareBox = document.createElement("div")
     squareBox.style.display = 'flex'
     squareBox.style.alignItems = 'center'
+    squareBox.style.alignSelf = 'center'
     squareBox.style.flexWrap = 'wrap'
     squareBox.style.maxWidth = '100px'
     // squareBox.style.flexDirection = 'row-reverse'
     squareBox.style.marginRight = '5px'
     for (let i = 0; i < squares; i++) {
-        let newSquare = square(i * 10, 0);
-        console.log('new square: ', newSquare)
+        let newSquare = square(10);
         squareBox.appendChild(newSquare)
     } 
+    // scoped for legibility, create the remainder square
+    {
+        const division = (remainder / 20)
+        const remainderWidth = (division * 10) / 100
+        if (remainderWidth > 0) {
+            const remainderSquare = remainderWidth < 1 ? square(1) : square(remainderWidth)
+            squareBox.appendChild(remainderSquare)
+        }
+    }
     element.prepend(squareBox)
 }
 
-function square (x, y) {
+function square (width) {
     let square = document.createElement("div")
-    square.style.width = '10px'
+    square.style.width = `${width}px`
     square.style.height = '10px'
-    square.style.border = '1px solid #FFFFFF'
-    square.style.backgroundColor = '#FF0000'
+    square.style.margin = '1px'
+    square.style.backgroundColor = '#0091e6'
     square.style.display = "block"
     return square;
 }
+
 
 gasData.opcodes.forEach(item => {
     calculateGasToSquares(item.gas, item.name)

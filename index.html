@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./dist/output.css">
   </head>
   <body class="max-w-5xl m-auto">
-    <h1 class="my-5">Gas Numbers Every Solidity Dev Should Know</h1>
-    <h2 class="my-5">Current Gas Price:</h2>
-    <div class="flex w-5/6 justify-between my-5">
+    <h1 class="my-5 text-2xl font-bold">Gas Numbers Every Solidity Dev Should Know</h1>
+    <!-- <h2 class="my-5">Current Gas Price:</h2>
+    <div class="flex justify-between my-5">
       <div>High:</div>
       <div>Med:</div>
       <div>Low:</div>
-    </div>
-    <h3>OPCODES</h3>
-    <div id='opcodes' class="flex w-5/6 flex-wrap justify-between my-5">
+    </div> -->
+    <h3 class="text-xl underline underline-offset-2">OPCODES</h3>
+    <div id='opcodes' class="flex flex-wrap justify-between my-5">
       <div id="ADD" class="flex opcode">
         <div>ADD: 3</div>
       </div>
@@ -92,42 +92,110 @@
         <div>CREATE: 32000</div>
       </div>
     </div>
-    <div id='contract-calls' class="flex flex-col my-5">
-      <h4>CONTRACT CALLS</h4>
-      <div id="ERC20: Transfer">ERC20::Transfer: 64883</div>
-      <div id="ERC721: Transfer">ERC721::Transfer: 84663</div>
-      <div id="Uniswap V3: Swap">Uniswap V3::Swap: 184361</div>
-      <div id="Uniswap V2: Swap">Uniswap V2::Swap: 152711</div>
-      <div id="SushiSwap: Swap">SushiSwap::Swap: 140843</div>
-      <div id="Curve: Swap">Curve::Swap: 749314</div>
-      <div id="Balancer: Swap">Balancer::Swap: 196230</div>
-      <div id="1inch: Swap">1inch::Swap: 141634</div>
-      <div id="CoW Protocol: Swap">CoW Protocol::Swap: 343007</div>
-      <div id="OpenSea: Sale">OpenSea::Sale: 202164</div>
-      <div id="SuperRare: Sale">SuperRare::Sale: 130556</div>
-      <div id="Rarible: Sale">Rarible::Sale: 245288</div>
-      <div id="LooksRare: Sale">LooksRare::Sale: 326391</div>
-      <div id="ENS: Register Domain">ENS::Register Domain: 266651</div>
-      <div id="Gnosis Safe: Create Multisig">Gnosis Safe::Create Multisig: 288015</div>
-      <div id="Arbitrum: Deposit">Arbitrum::Deposit: 90994</div>
-      <div id="Optimism: Deposit">Optimism::Deposit: 150733</div>
-      <div id="Polygon: Deposit">Polygon::Deposit: 149151</div>
-      <div id="Beacon Chain: Deposit">Beacon Chain::Deposit: 53014</div>
-      <div id="Tornado.Cash: Deposit">Tornado.Cash::Deposit: 1012400</div>
-      <div id="Tornado.Cash: Withdraw">Tornado.Cash::Withdraw: 360414</div>
-      <div id="dYdX: Borrow">dYdX::Borrow: 174075</div>
-      <div id="MakerDAO: Borrow">MakerDAO::Borrow: 223023</div>
-      <div id="Compound: Collect">Compound::Collect: 1237520</div>
-      <div id="Compound: Borrow">Compound::Borrow: 339842</div>
-      <div id="Compound: Repay">Compound::Repay: 112358</div>
-      <div id="Aave: Borrow">Aave::Borrow: 318478</div>
-      <div id="Aave: Repay">Aave::Repay: 199395</div>
-      <div id="Lido: Stake">Lido::Stake: 82686</div>
-      <div id="Yearn Finance: Deposit">Yearn Finance::Deposit: 216011</div>
-      <div id="Hop Protocol: Bridge">Hop Protocol::Bridge: 121457</div>
-      <div id="Multichain: Bridge">Multichain::Bridge: 57761</div>
-      <div id="Across Protocol: Bridge">Across Protocol::Bridge: 120666</div>
-      <div id="Synapse: Bridge">Synapse::Bridge: 107610</div>
+    <h4 class="text-xl underline underline-offset-4">CONTRACT CALLS</h4>
+    <div id='contract-calls'  class="flex flex-wrap justify-between my-5">
+      <div class='flex contract-call' id="ERC20: Transfer">
+        <div>ERC20::Transfer: 64883</div>
+      </div>
+      <div class='flex contract-call' id="ERC721: Transfer">
+        <div>ERC721::Transfer: 84663</div>
+      </div>
+      <div class='flex contract-call' id="Uniswap V3: Swap">
+        <div>Uniswap V3::Swap: 184361</div>
+      </div>
+      <div class='flex contract-call' id="Uniswap V2: Swap">
+        <div>Uniswap V2::Swap: 152711</div>
+      </div>
+      <div class='flex contract-call' id="SushiSwap: Swap">
+        <div>SushiSwap::Swap: 140843</div>
+      </div>
+      <div class='flex contract-call' id="Curve: Swap">
+        <div>Curve::Swap: 749314</div>
+      </div>
+      <div class='flex contract-call' id="Balancer: Swap">
+        <div>Balancer::Swap: 196230</div>
+      </div>
+      <div class='flex contract-call' id="1inch: Swap">
+        <div>1inch::Swap: 141634</div>
+      </div>
+      <div class='flex contract-call' id="CoW Protocol: Swap">
+        <div>CoW Protocol::Swap: 343007</div>
+      </div>
+      <div class='flex contract-call' id="OpenSea: Sale">
+        <div>OpenSea::Sale: 202164</div>
+      </div>
+      <div class='flex contract-call' id="SuperRare: Sale">
+        <div>SuperRare::Sale: 130556</div>
+      </div>
+      <div class='flex contract-call' id="Rarible: Sale">
+        <div>Rarible::Sale: 245288</div>
+      </div>
+      <div class='flex contract-call' id="LooksRare: Sale">
+        <div>LooksRare::Sale: 326391</div>
+      </div>
+      <div class='flex contract-call' id="ENS: Register Domain">
+        <div>ENS::Register Domain: 266651</div>
+      </div>
+      <div class='flex contract-call' id="Gnosis Safe: Create Multisig">
+        <div>Gnosis Safe::Create Multisig: 288015</div>
+      </div>
+      <div class='flex contract-call' id="Arbitrum: Deposit">
+        <div>Arbitrum::Deposit: 90994</div>
+      </div>
+      <div class='flex contract-call' id="Optimism: Deposit">
+        <div>Optimism::Deposit: 150733</div>
+      </div>
+      <div class='flex contract-call' id="Polygon: Deposit">
+        <div>Polygon::Deposit: 149151</div>
+      </div>
+      <div class='flex contract-call' id="Beacon Chain: Deposit">
+        <div>Beacon Chain::Deposit: 53014</div>
+      </div>
+      <div class='flex contract-call' id="Tornado.Cash: Deposit">
+        <div>Tornado.Cash::Deposit: 1012400</div>
+      </div>
+      <div class='flex contract-call' id="Tornado.Cash: Withdraw">
+        <div>Tornado.Cash::Withdraw: 360414</div>
+      </div>
+      <div class='flex contract-call' id="dYdX: Borrow">
+        <div>dYdX::Borrow: 174075</div>
+      </div>
+      <div class='flex contract-call' id="MakerDAO: Borrow">
+        <div>MakerDAO::Borrow: 223023</div>
+      </div>
+      <div class='flex contract-call' id="Compound: Collect">
+        <div>Compound::Collect: 1237520</div>
+      </div>
+      <div class='flex contract-call' id="Compound: Borrow">
+        <div>Compound::Borrow: 339842</div>
+      </div>
+      <div class='flex contract-call' id="Compound: Repay">
+        <div>Compound::Repay: 112358</div>
+      </div>
+      <div class='flex contract-call' id="Aave: Borrow">
+        <div>Aave::Borrow: 318478</div>
+      </div>
+      <div class='flex contract-call' id="Aave: Repay">
+        <div>Aave::Repay: 199395</div>
+      </div>
+      <div class='flex contract-call' id="Lido: Stake">
+        <div>Lido::Stake: 82686</div>
+      </div>
+      <div class='flex contract-call' id="Yearn Finance: Deposit">
+        <div>Yearn Finance::Deposit: 216011</div>
+      </div>
+      <div class='flex contract-call' id="Hop Protocol: Bridge">
+        <div>Hop Protocol::Bridge: 121457</div>
+      </div>
+      <div class='flex contract-call' id="Multichain: Bridge">
+        <div>Multichain::Bridge: 57761</div>
+      </div>
+      <div class='flex contract-call' id="Across Protocol: Bridge">
+        <div>Across Protocol::Bridge: 120666</div>
+      </div>
+      <div class='flex contract-call' id="Synapse: Bridge">
+        <div>Synapse::Bridge: 107610</div>
+      </div>
     </div>
     <script src="./dist/bundle.js"></script>
   </body>

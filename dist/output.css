@@ -595,6 +595,10 @@ video {
   max-width: 64rem;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -656,6 +660,14 @@ video {
 
 .underline-offset-4 {
   text-underline-offset: 4px;
+}
+
+#opcodes {
+  max-height: 400px;
+}
+
+#contract-calls{
+  max-height: 2650px;
 }
 
 .opcode {

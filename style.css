@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+#opcodes {
+    max-height: 400px;
+}
+#contract-calls{
+    max-height: 2650px;
+}
 .opcode {
     margin: 10px 5px;
     min-width: 200px;

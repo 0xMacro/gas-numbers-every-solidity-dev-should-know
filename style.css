@@ -11,8 +11,8 @@
     min-width: 200px;
 } 
 .operation-name {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
 }
 
 a {

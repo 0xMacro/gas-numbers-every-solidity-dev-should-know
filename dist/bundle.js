@@ -90,8 +90,8 @@ function addSquaresToDOM (elementID, squares, remainder, color) {
     const element = document.getElementById(elementID)
     let squareBox = document.createElement("div")
     squareBox.style.display = 'flex'
-    squareBox.style.alignItems = 'center'
-    squareBox.style.alignSelf = 'center'
+    // squareBox.style.alignItems = 'center'
+    squareBox.style.alignSelf = 'start'
     squareBox.style.flexWrap = 'wrap'
     squareBox.style.maxWidth = '100px'
     // squareBox.style.flexDirection = 'row-reverse'

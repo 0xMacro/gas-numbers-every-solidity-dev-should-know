@@ -567,6 +567,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -583,6 +587,18 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .justify-between {
   justify-content: space-between;
 }
+
+.border {
+  border-width: 1px;
+}
+
+.opcode {
+  margin: 10px 0px
+} 

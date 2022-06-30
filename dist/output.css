@@ -567,6 +567,22 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -627,4 +643,10 @@ video {
 .operation-name {
   display: flex;
   align-items: center;
+}
+
+a {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
 }

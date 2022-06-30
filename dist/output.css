@@ -562,18 +562,14 @@ video {
   margin: auto;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.mt-5 {
+.my-5 {
   margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mb-5 {
@@ -596,20 +592,24 @@ video {
   display: flex;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
 
-.h-24 {
-  height: 6rem;
+.w-8 {
+  width: 2rem;
 }
 
-.h-5 {
-  height: 1.25rem;
+.w-10 {
+  width: 2.5rem;
 }
 
-.h-8 {
-  height: 2rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .max-w-5xl {
@@ -635,6 +635,16 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {

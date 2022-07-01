@@ -23,7 +23,14 @@
       <a target="_blank" href="https://0xmacro.com/?utm_source=gasnums"><img class="h-8 my-auto object-contain" src="./assets/logo-t.png"/></a>
     </div>
     <p class="mb-5 mt-1 text-xs">Created by Theo Telonis (<a target="_blank" href="https://twitter.com/dd0sxx">dd0sxx</a>) for <a target="_blank" href="https://0xmacro.com/?utm_source=gasnums">Macro</a></p>
-    <p class="my-5 p-2 border-2 border-black">Each box is = 2,000 units of gas. All numbers indicate the number of gas units each operation requires to execute.</p>
+    <div class="my-5 p-2 border-2 border-black">
+      <h2>Key:</h2>
+      <ul>
+        <li>⟢ Each box is = 2,000 units of gas. All numbers indicate the number of gas units each operation requires to execute.</li>
+        <li>⟢ <a target="_blank" href="https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a0-2-access-sets">Warm/Cold and Clean/Dirty</a> is whether or not a slot or address has been accessed or written to within the current execution context.</li>
+        <li>⟢ New-Address is when a CALL is made to an address that does not exist, forcing a new account to be created in the state trie.</li>
+      </ul>
+    </div>
     <p class="mb-1 mt-1 text-sm text-neutral-600">Opcode gas numbers were sourced from the official <a target="_blank" href="https://ethereum.org/en/developers/docs/evm/opcodes/">Ethereum Docs</a>, and contract-calls were sourced from <a target="_blank" href="https://etherscan.io/gastracker">Etherscan.io</a> and converted into gas units using <a target="_blank" href="https://www.wolframalpha.com/">Wolfram Alpha</a> for calculations.</p>
     <p class="mb-5 mt-1 text-sm text-neutral-600">Inspired by <a target="_blank" href="https://colin-scott.github.io/personal_website/research/interactive_latency.html">Norvig's Latency Numbers</a>, and a post in the <a target="_blank" href="https://0xmacro.com/?utm_source=gasnums">Macro</a> discord from a student named <a target="_blank" href="https://twitter.com/jqphu">Justin Phu</a>, who suggested someone make a version with gas numbers for popular calls and opcodes.</p>
     <!-- <h2 class="my-5">Current Gas Price:</h2>

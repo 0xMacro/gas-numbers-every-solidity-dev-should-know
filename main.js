@@ -50,16 +50,47 @@ function appendInformation (name, info) {
     informationBox.style.width = '12px'
     informationBox.style.height = '12px'
     informationBox.style.margin = '6px 0px 0px 6px'
+    informationBox.style.padding = '6px'
     informationBox.style.backgroundImage = 'url("./assets/i.svg")'
 
-    informationBox.onmouseover(() => {
+    informationBox.onmouseover = () => {
         displayInfoModal(name, info, element)
-    })
+    }
+    informationBox.onmouseout = () => {
+        removeInfoModal(name, info, element)
+    }
+
+
     element.appendChild(informationBox)
 }
 
 function displayInfoModal (name, info, element) {
+    let informationModal = document.createElement("div")
+    informationModal.id = `${name}-info-modal`
+    // let modalText = document.createElement("div")
+    informationModal.innerText = name + ": " + info
+    // modalText.style.margin = 'auto'
+    // modalText.style.height = 'auto'
+    // modalText.style.width = 'auto'
+    // informationModal.appendChild(modalText)
+
+    informationModal.style.width = 'auto'
+    informationModal.style.maxWidth = '500px'
+    informationModal.style.height = 'auto'
+    informationModal.style.padding = '15px'
+    informationModal.style.border = '1px solid black'
+    informationModal.style.backgroundColor = 'lightgray'
+    informationModal.style.zIndex = '10'
+    informationModal.style.position = 'absolute'
+    informationModal.style.left = `${element.offsetLeft}px`
+    informationModal.style.marginTop = '30px'
     
+    element.appendChild(informationModal)
+}
+
+function removeInfoModal(name, info, element) {
+    let infoModal = document.getElementById(`${name}-info-modal`)
+    infoModal.remove()
 }
 
 

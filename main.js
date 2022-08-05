@@ -43,10 +43,32 @@ function square (width, color) {
     return square;
 }
 
+function appendInformation (name, info) {
+    const element = document.getElementById(name)
+    let informationBox = document.createElement("div")
+
+    informationBox.style.width = '12px'
+    informationBox.style.height = '12px'
+    informationBox.style.margin = '6px 0px 0px 6px'
+    informationBox.style.backgroundImage = 'url("./assets/i.svg")'
+
+    informationBox.onmouseover(() => {
+        displayInfoModal(name, info, element)
+    })
+    element.appendChild(informationBox)
+}
+
+function displayInfoModal (name, info, element) {
+    
+}
+
 
 gasData.opcodes.forEach(item => {
     calculateGasToSquares(item.gas, item.name, '#0091e6')
+    if (item.information.length > 0) {
+        appendInformation(item.name, item.information)
+    }
 })
 gasData.contractCalls.forEach(item => {
-    calculateGasToSquares(item.gas, item.name, '#fa6132')
+    calculateGasToSquares(item.gas, item.name,  '#fa6132')
 })

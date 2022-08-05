@@ -2,7 +2,7 @@
 let data = {
     types: ["opcodes", "contract calls"],
     opcodes: [
-        {name: "ADD", gas: 3},
+        {name: "ADD", gas: 3, information: ""},
         {name: "BALANCE (warm)", gas: 100, information: "The opcodes BALANCE, EXTCODESIZE, EXTCODEHASH have the same pricing function based on making a single account access. See A0-2 (https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a0-2-access-sets) for details on EIP-2929 and touched_addresses."},
         {name: "BALANCE (cold)", gas: 2600, information: "The opcodes BALANCE, EXTCODESIZE, EXTCODEHASH have the same pricing function based on making a single account access. See A0-2 (https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a0-2-access-sets) for details on EIP-2929 and touched_addresses."},
         {name: "CALLDATACOPY", gas: 7, information: "gas_cost = 3 + 3 * data_size_words + mem_expansion_cost -- all memory expansion costs are calculated as 1 unit of gas for one word size of memory"  },
@@ -122,11 +122,33 @@ function square (width, color) {
     return square;
 }
 
+function appendInformation (name, info) {
+    const element = document.getElementById(name)
+    let informationBox = document.createElement("div")
+
+    informationBox.style.width = '12px'
+    informationBox.style.height = '12px'
+    informationBox.style.margin = '6px 0px 0px 6px'
+    informationBox.style.backgroundImage = 'url("./assets/i.svg")'
+
+    informationBox.onmouseover(() => {
+        displayInfoModal(name, info, element)
+    })
+    element.appendChild(informationBox)
+}
+
+function displayInfoModal (name, info, element) {
+    
+}
+
 
 gasData.opcodes.forEach(item => {
     calculateGasToSquares(item.gas, item.name, '#0091e6')
+    if (item.information.length > 0) {
+        appendInformation(item.name, item.information)
+    }
 })
 gasData.contractCalls.forEach(item => {
-    calculateGasToSquares(item.gas, item.name, '#fa6132')
+    calculateGasToSquares(item.gas, item.name,  '#fa6132')
 })
 },{"./gasData":1}]},{},[2]);

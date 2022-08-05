@@ -1,7 +1,7 @@
 let data = {
     types: ["opcodes", "contract calls"],
     opcodes: [
-        {name: "ADD", gas: 3},
+        {name: "ADD", gas: 3, information: ""},
         {name: "BALANCE (warm)", gas: 100, information: "The opcodes BALANCE, EXTCODESIZE, EXTCODEHASH have the same pricing function based on making a single account access. See A0-2 (https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a0-2-access-sets) for details on EIP-2929 and touched_addresses."},
         {name: "BALANCE (cold)", gas: 2600, information: "The opcodes BALANCE, EXTCODESIZE, EXTCODEHASH have the same pricing function based on making a single account access. See A0-2 (https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a0-2-access-sets) for details on EIP-2929 and touched_addresses."},
         {name: "CALLDATACOPY", gas: 7, information: "gas_cost = 3 + 3 * data_size_words + mem_expansion_cost -- all memory expansion costs are calculated as 1 unit of gas for one word size of memory"  },

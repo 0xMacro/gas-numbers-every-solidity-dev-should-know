@@ -1,6 +1,6 @@
 # gas-numbers-every-solidity-dev-should-know
 
-The live site can be found at https://macro.cx/gas-nums
+The live site can be found at https://0xmacro.com/library/gas-nums
 
 This project was inspired by Norvig's Latency Numbers, and a post in the Macro discord from a student named Justin Phu, who suggested someone make a version with gas numbers for popular calls and opcodes.
 
